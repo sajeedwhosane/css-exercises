@@ -4,10 +4,18 @@ body {
   min-height: 100vh;
 }
 
+body{
+  display:flex;
+  flex-direction: column;
+}
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display:flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .footer {
@@ -25,4 +33,35 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+.content{
+  display:flex;
+min-height:80%;
+}
+.sidebar{
+  width:300px;
+  flex-shrink:0;
+  padding:16px;
+}
+
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  padding:32px;
+}
+.card{
+width:300px;
+padding:32px;
+}
+
+.footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
